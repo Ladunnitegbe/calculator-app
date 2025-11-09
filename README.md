@@ -1,8 +1,4 @@
 
-Simple calculator application
-Here’s a clean, professional **README.md** you can use for your simple calculator project 👇
-
----
 
 # 🧮 Simple Calculator Application
 
