@@ -23,7 +23,6 @@ A lightweight and easy-to-use **calculator application** built to perform basic 
 * **CSS3** – styling and layout
 * **JavaScript** – core calculator logic
 
-*(If this is a desktop or mobile app, you can replace these with Python, Java, Flutter, etc.)*
 
 ---
 
@@ -51,30 +50,16 @@ A lightweight and easy-to-use **calculator application** built to perform basic 
 1. Enter numbers using the input fields or buttons.
 2. Choose an operation (**+**, **−**, **×**, **÷**).
 3. View the result instantly on the display screen.
-4. Click **C** or **Clear** to reset and start again.
+4. Click **tolearC** or **back button* to reset and start again.
 
 ---
 
 ## 🧩 Example (JavaScript snippet)
 
 ```javascript
-function calculate(operator) {
-  const num1 = parseFloat(document.getElementById("num1").value);
-  const num2 = parseFloat(document.getElementById("num2").value);
-  let result;
+-
 
-  switch (operator) {
-    case '+': result = num1 + num2; break;
-    case '-': result = num1 - num2; break;
-    case '*': result = num1 * num2; break;
-    case '/': result = num2 !== 0 ? num1 / num2 : 'Error'; break;
-  }
-
-  document.getElementById("result").innerText = result;
-}
-```
-
----
+--
 
 ## 🧠 Learning Objectives
 
