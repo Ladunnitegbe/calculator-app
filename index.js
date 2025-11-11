@@ -66,6 +66,12 @@ function deleteDisplay(){
 
 }
 
+function convert(){
+    if (currentInput === '') return;
+    currentInput = (parseFloat(currentInput) * -1).toString();
+    updateDisplay();
+}
+
 function calculate(){
    let result;
    const prev = parseFloat(previousInput);
