@@ -15,7 +15,7 @@
     <div class="container">
         <header class="header">
             <div class="header_title">
-                <h1>Calculator <span id="showMenu">&#8964;</span>  </h1>
+                <h1>Calculator <button id="showMenu">&#8964;</button>  </h1>
             </div>
 
             <svg  id= "reload" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 128c106 0 192 86 192 192s-86 192-192 192c-65.2 0-122.9-32.5-157.6-82.3-10.1-14.5-30.1-18-44.6-7.9s-18 30.1-7.9 44.6C156.1 532.6 233 576 320 576c141.4 0 256-114.6 256-256S461.4 64 320 64c-85.7 0-161.5 42.1-208 106.7V144c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 17.7 14.3 32 32 32h112.1c17.7 0 32-14.3 32-32s-14.3-32-32-32h-38.3c33.1-57.4 95.2-96 166.2-96zm24 88c0-13.3-10.7-24-24-24s-24 10.7-24 24v104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0 9.3-9.4 9.4-24.6 0-33.9l-65-65V216z"/></svg>
@@ -49,33 +49,35 @@
             </div>
         </section>
 
-        <section class="display">
-            <input readonly id="maindisplay">
+        <section class="maindisplay">
+            <!-- <input readonly id="maindisplay"> -->
+             <div id="displayExpression"></div>
+             <div id="displayResult"></div>
         </section>
 
         <section class="keys">
             <button onclick="clearDisplay()" class="operatorbtn">AC</button>
-            <button onclick="appendToDisplay('-')" class="operatorbtn">+/-</button>
-            <button onclick="appendToDisplay('%')" class="operatorbtn">&percnt;</button>
-            <button onclick="appendToDisplay('/')" class="operatorbtn">&divide;</button>
+            <button onclick="convert()" class="operatorbtn">+/-</button>
+            <button onclick="pickOperator('%')" class="operatorbtn">&percnt;</button>
+            <button onclick="pickOperator('/')" class="operatorbtn">&divide;</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('*')" class="operatorbtn">&times;</button>
+            <button onclick="pickOperator('*')" class="operatorbtn">&times;</button>
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')" class="operatorbtn">&minus;</button>
+            <button onclick="pickOperator('-')" class="operatorbtn">&minus;</button>
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')" class="operatorbtn">&plus;</button>
+            <button onclick="pickOperator('+')" class="operatorbtn">&plus;</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')" class="operatorbtn">.</button>
-            <button onclick="deleteDisplay()" class="operatorbtn"><i class="fa fa-backward"></i></button>
+            <button onclick="deleteDisplay()" class="operatorbtn"><i class="fa-solid fa-delete-left"></i></button>
             <button onclick="calculate()" class="equalsbtn">&equals;</button>
             
-            
+            <hr id="black_line">
         </section>
 
        

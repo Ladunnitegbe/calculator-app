@@ -18,7 +18,7 @@ body{
     max-height: 50.75rem;
     background-color: #FBFBFB;
     border-radius: 1.25rem;
-    margin:  4rem auto;
+    margin:  2rem auto;
     border: .375rem solid #4885F7;
     overflow: hidden;
     position: relative;
@@ -50,51 +50,84 @@ body{
     width: 9.5625rem;
     height: 10.0625rem;
     border: none;
+    border-radius: .3rem;
     margin-left: 2rem;
+     background-color: #efecec;
     margin-top: 0;
-    /*display: none;*/
+    display: none;
     position: absolute;
     
 }
 
+.show{
+   width: 9.5625rem;
+    height: 10.0625rem;
+    border: none;
+    background-color: #FBFBFB;
+    margin-left: 1rem;
+    margin-top: 0;
+    display: block;
+    position: absolute;
+}
+
+#showMenu{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#showMenu:hover{
+   background-color: #f3ebeb;
+   border-radius: 0.3rem;
+
+}
+
+#showMenu:active{
+    background-color: #fff;
+    border: none;
+}
 
 .functions_list{
-    list-style: none;
-    /* padding: 0; */
- margin:0;
+    /* list-style: none; */
+    padding: 0.5rem;
+    margin:0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .function{
     list-style: none;
-    margin: 0.5rem 0;
-    width: 7.4375rem;
-    height: 1.4375rem;
+    margin: 0.5rem 0 1rem;
+    width: 10rem;
+    height: 1.5rem;
     font-size: .8rem;
+    margin-left: 0.2rem;
     /* padding: 0;
     margin: 0; */
 }
 
-.function_icon{
-     width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
+.function button{
     border: none;
-    margin: 0;
-    padding: 0;
+     cursor: pointer;
+}
+
+.function_icon{
+     width: 1.2rem;
+    height: 1.2rem;
+    padding: 0;    
 }
 
 .display {
-    width: 100;
+    width: 100%;
 }
 
-#maindisplay{
-    width: 90%;
+.maindisplay{
+    width: 70%;
     padding: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: right;
     border: none;
     color: #000;
@@ -106,7 +139,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.625rem;
-    padding: 1.563rem;
+    padding: 1.563rem 1.563rem 4.5rem 1.563rem;
+    
     align-content: center;
     justify-content: center;
 }
@@ -114,7 +148,7 @@ body{
 .keys button{
     width: 4rem;
     height: 4rem;
-    border-radius: 1.6rem;
+    border-radius: 1.2rem;
     border: none;
     background-color: #FBFBFB;
     color: #000;
@@ -152,7 +186,7 @@ body{
     color: #fff;
 }
 
-.keys .equalsbtn: :hover{
+.keys .equalsbtn :hover{
     background-color: #427ce6;
     color: #fff;
 }
@@ -160,4 +194,17 @@ body{
 .keys .equalsbtn :active{
     background-color: #2a68da;
     color: #fff;
+}
+
+#black_line{
+    width: 7rem;
+    color: #000;
+    height: 0rem;
+    align-content: center;
+    justify-content: baseline;
+    border: .25rem solid #000;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: .125rem;
+    right: 8rem;
 }
