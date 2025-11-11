@@ -14,8 +14,8 @@ body{
 
 .container {
     max-width: 23.4375rem;
-    height: 95vh;
-    max-height: 50.75rem;
+    height: 100vh;
+    max-height: 56.25rem;
     background-color: #FBFBFB;
     border-radius: 1.25rem;
     margin:  2rem auto;
@@ -126,7 +126,8 @@ body{
 
 .maindisplay{
     width: 70%;
-    padding: 5rem;
+    height: 15%;
+    padding: 4rem;
     font-size: 2rem;
     text-align: right;
     border: none;
@@ -134,20 +135,29 @@ body{
  
 }
 
+#displayExpression{
+    font-size: 2rem;
+}
+
+#displayResult{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 .keys{
     background-color: #efecec;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.625rem;
-    padding: 1.563rem 1.563rem 4.5rem 1.563rem;
+    padding: .5rem 1.563rem 4.5rem 1.563rem;
     
     align-content: center;
     justify-content: center;
 }
 
 .keys button{
-    width: 4rem;
-    height: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
     border-radius: 1.2rem;
     border: none;
     background-color: #FBFBFB;
